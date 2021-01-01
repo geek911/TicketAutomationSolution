@@ -313,6 +313,7 @@
   <ItemGroup>
     <Content Include="Model.Desktop.xafml" />
     <Content Include="Model.Tablet.xafml" />
+    <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
     <None Include="ReadMe.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
