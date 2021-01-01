@@ -129,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessObjects\Bus.cs" />
+    <Compile Include="BusinessObjects\Employee.cs" />
     <Compile Include="BusinessObjects\Location.cs" />
     <Compile Include="BusinessObjects\PassengerType.cs" />
     <Compile Include="BusinessObjects\Ticket.cs" />

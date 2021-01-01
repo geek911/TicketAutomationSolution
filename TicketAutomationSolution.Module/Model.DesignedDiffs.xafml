@@ -5,7 +5,10 @@
       <Item Id="Default" Caption="More Options">
         <Items>
           <Item Id="Bus_ListView" Removed="True" />
-          <Item Id="Location_ListView" Caption="Stations / Places" />
+          <Item Id="Event_ListView" Caption="Email Notifications" />
+          <Item Id="Location_ListView" Caption="Location / Cities / Stations" />
+          <Item Id="PassengerType_ListView" Caption="Passenger Types" />
+          <Item Id="TestPerson_ListView" Caption="Employees" />
           <Item Id="Ticket_ListView" Removed="True" />
         </Items>
       </Item>
