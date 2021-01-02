@@ -1,8 +1,27 @@
-﻿<?xml version="1.0" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Application Title="TicketAutomationSolution">
+  <NavigationItems>
+    <Items>
+      <Item Id="Default" Caption="More Options">
+        <Items>
+          <Item Id="Bus_ListView" Removed="True" />
+          <Item Id="Location_ListView" Caption="Stations / Places" />
+          <Item Id="Ticket_ListView" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="Menu" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="Ticket_ListView" ViewId="Ticket_ListView" ObjectKey="" Index="0" IsNewNode="True" />
+          <Item Id="Bus_ListView" ViewId="Bus_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
   <Options>
     <LayoutManagerOptions RequiredFieldMark="*" />
   </Options>
-  <Views>
-  </Views>
+  <SchemaModules>
+    <SchemaModule Name="SchedulerModuleBase" Version="20.1.4.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="20.1.4.0" IsNewNode="True" />
+  </SchemaModules>
 </Application>

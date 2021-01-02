@@ -1,2 +1,33 @@
-﻿<?xml version="1.0" ?>
-<Application />
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default" Index="0" Caption="Menu">
+        <Items>
+          <Item Id="Ticket_ListView" ViewId="Ticket_ListView" ObjectKey="" Index="0" IsNewNode="True" />
+          <Item Id="Bus_ListView" ViewId="Bus_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="Event_ListView" Removed="True" />
+          <Item Id="Location_ListView" Removed="True" />
+          <Item Id="PassengerType_ListView" Removed="True" />
+          <Item Id="TicketType_ListView" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="Menu" Caption="More Options">
+        <Items>
+          <Item Id="Bus_ListView" Removed="True" />
+          <Item Id="Event_ListView" ViewId="Event_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="Location_ListView" Caption="Stations / Places" ViewId="Location_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="PassengerType_ListView" ViewId="PassengerType_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="Ticket_ListView" Removed="True" />
+          <Item Id="TicketType_ListView" ViewId="TicketType_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="SchedulerModuleBase" Version="20.1.4.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerWindowsFormsModule" Version="20.1.4.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="20.1.4.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="20.1.4.0" IsNewNode="True" />
+  </SchemaModules>
+</Application>

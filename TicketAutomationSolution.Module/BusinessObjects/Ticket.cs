@@ -18,6 +18,7 @@ namespace TicketAutomationSolution.Module.BusinessObjects
         }
 
 
+        Bus _bus;
         string _ticketNumber;
         string _conductor;
         decimal _amount;
@@ -86,6 +87,14 @@ namespace TicketAutomationSolution.Module.BusinessObjects
         {
             get => _ticketNumber;
             set => SetPropertyValue(nameof(TicketNumber), ref _ticketNumber, value);
+        }
+
+        
+        [Association("Bus-Tickets")]
+        public Bus Bus
+        {
+            get => _bus;
+            set => SetPropertyValue(nameof(Bus), ref _bus, value);
         }
 
     }
