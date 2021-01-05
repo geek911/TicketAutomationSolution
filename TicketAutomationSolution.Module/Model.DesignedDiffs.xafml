@@ -8,7 +8,6 @@
           <Item Id="Event_ListView" Caption="Email Notifications" />
           <Item Id="Location_ListView" Caption="Location / Cities / Stations" />
           <Item Id="PassengerType_ListView" Caption="Passenger Types" />
-          <Item Id="TestPerson_ListView" Caption="Employees" />
           <Item Id="Ticket_ListView" Removed="True" />
         </Items>
       </Item>
@@ -27,4 +26,114 @@
     <SchemaModule Name="SchedulerModuleBase" Version="20.1.4.0" IsNewNode="True" />
     <SchemaModule Name="SystemModule" Version="20.1.4.0" IsNewNode="True" />
   </SchemaModules>
+  <Views>
+    <DetailView Id="Bus_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="21.181001283697046">
+            <LayoutGroup Id="Bus" RelativeSize="100" Direction="Vertical">
+              <LayoutGroup Id="Bus_col1" Caption="Bus_col1" RelativeSize="100">
+                <LayoutGroup Id="Autoe1bd6eba-52f4-427c-be1f-c714550e1112" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="30.76923076923077" IsNewNode="True">
+                  <LayoutItem Id="Name" ViewItem="Name" Index="0" RelativeSize="50" IsNewNode="True" />
+                  <LayoutItem Id="Item2" Index="1" RelativeSize="50" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Auto3d1a4e91-56ab-437e-98f4-f5a4d13ca32b" ShowCaption="False" Caption="" Index="1" RelativeSize="69.230769230769226" IsNewNode="True">
+                  <LayoutGroup Id="Auto6ab4f384-be74-4d60-9483-d0f3b43ebe23" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="32.098765432098766" IsNewNode="True">
+                    <LayoutItem Id="NumberPlate" ViewItem="NumberPlate" Index="0" RelativeSize="50" IsNewNode="True" />
+                    <LayoutItem Id="Item1" Index="1" RelativeSize="50" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto3cbb1007-7390-471e-9ab9-fb2af3f52690" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="67.901234567901241" IsNewNode="True">
+                    <LayoutItem Id="TodaySales" ViewItem="TodaySales" CaptionLocation="Top" Index="0" RelativeSize="33.98950131233596" IsNewNode="True" />
+                    <LayoutItem Id="TotalSalesThisYear" ViewItem="TotalSalesThisYear" CaptionLocation="Top" Index="1" RelativeSize="32.939632545931758" IsNewNode="True" />
+                    <LayoutItem Id="ThisMonthSales" ViewItem="ThisMonthSales" CaptionLocation="Top" Index="2" RelativeSize="33.070866141732282" IsNewNode="True" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="NumberPlate" ViewItem="NumberPlate" Index="1" RelativeSize="26.530612244897959" Removed="True" />
+                <LayoutItem Id="TodaySales" ViewItem="TodaySales" Index="2" RelativeSize="36.734693877551024" Removed="True" />
+                <LayoutItem Id="Name" RelativeSize="36.734693877551024" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Bus_col2" Caption="Bus_col2" RelativeSize="18.110236220472441" Direction="Vertical" Removed="True">
+                <LayoutItem Id="ThisMonthSales" ViewItem="ThisMonthSales" Index="0" RelativeSize="49.282296650717704" Removed="True" />
+                <LayoutItem Id="TotalSalesThisYear" Index="0" RelativeSize="100" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" RelativeSize="81.333333333333329" Removed="True">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Tickets_Group" Direction="Vertical" RelativeSize="78.818998716302957">
+            <LayoutItem Id="Tickets" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Location_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Location" RelativeSize="5.8666666666666663">
+              <LayoutItem Id="Name" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" RelativeSize="94.13333333333334">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="PassengerType_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="PassengerType" RelativeSize="5.8666666666666663">
+              <LayoutItem Id="Name" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" RelativeSize="94.13333333333334">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Ticket_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Ticket" RelativeSize="25.333333333333332">
+              <LayoutGroup Id="Ticket_col1" RelativeSize="50">
+                <LayoutItem Id="DateTime" RelativeSize="22.368421052631579" />
+                <LayoutItem Id="StartStation" RelativeSize="17.105263157894736" />
+                <LayoutItem Id="EndStation" RelativeSize="17.105263157894736" />
+                <LayoutItem Id="TicketType" RelativeSize="17.105263157894736" />
+                <LayoutItem Id="PassengerType" RelativeSize="26.315789473684209" />
+              </LayoutGroup>
+              <LayoutGroup Id="Ticket_col2" RelativeSize="50">
+                <LayoutItem Id="Amount" RelativeSize="22.368421052631579" />
+                <LayoutItem Id="Conductor" RelativeSize="17.105263157894736" />
+                <LayoutItem Id="TicketNumber" RelativeSize="17.105263157894736" />
+                <LayoutItem Id="Bus" RelativeSize="43.421052631578945" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" RelativeSize="74.666666666666671">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="TicketType_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="TicketType" RelativeSize="5.8666666666666663">
+              <LayoutItem Id="Name" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" RelativeSize="94.13333333333334">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
 </Application>

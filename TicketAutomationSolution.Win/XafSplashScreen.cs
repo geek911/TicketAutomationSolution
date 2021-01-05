@@ -16,13 +16,13 @@ namespace TicketAutomationSolution.Win {
             Stream svgStream = assembly.GetManifestResourceStream(blankLogoResourceName);
             if(svgStream != null) {
                 svgStream.Position = 0;
-                peLogo.SvgImage = SvgImage.FromStream(svgStream);
+                //peLogo.SvgImage = SvgImage.FromStream(svgStream);
             }
         }
         protected override void DrawContent(GraphicsCache graphicsCache, Skin skin) {
             Rectangle bounds = ClientRectangle;
             bounds.Width--; bounds.Height--;
-            graphicsCache.Graphics.DrawRectangle(graphicsCache.GetPen(Color.FromArgb(255, 87, 87, 87), 1), bounds);
+            graphicsCache.Graphics.DrawRectangle(graphicsCache.GetPen(Color.FromArgb(0, 0, 255, 87), 1), bounds);
         }
         protected void UpdateLabelsPosition() {
             labelApplicationName.CalcBestSize();

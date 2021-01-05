@@ -38,9 +38,9 @@ namespace TicketAutomationSolution.Module.DatabaseUpdate {
             PermissionPolicyUser userAdmin = ObjectSpace.FindObject<PermissionPolicyUser>(new BinaryOperator("UserName", "Admin"));
             if(userAdmin == null) {
                 userAdmin = ObjectSpace.CreateObject<PermissionPolicyUser>();
-                userAdmin.UserName = "Admin";
+                userAdmin.UserName = "Moses";
                 // Set a password if the standard authentication type is used
-                userAdmin.SetPassword("");
+                userAdmin.SetPassword("password123");
             }
 			// If a role with the Administrators name doesn't exist in the database, create this role
             PermissionPolicyRole adminRole = ObjectSpace.FindObject<PermissionPolicyRole>(new BinaryOperator("Name", "Administrators"));

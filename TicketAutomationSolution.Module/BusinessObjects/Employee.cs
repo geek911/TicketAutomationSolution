@@ -13,5 +13,13 @@ namespace TicketAutomationSolution.Module.BusinessObjects
         { }
 
 
+        bool _receiveNotifications;
+
+        public bool ReceiveNotifications
+        {
+            get => _receiveNotifications;
+            set => SetPropertyValue(nameof(ReceiveNotifications), ref _receiveNotifications, value);
+        }
+
     }
 }

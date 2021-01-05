@@ -4,8 +4,8 @@
     <Items>
       <Item Id="Default" Index="0" Caption="Menu">
         <Items>
-          <Item Id="Ticket_ListView" ViewId="Ticket_ListView" ObjectKey="" Index="0" IsNewNode="True" />
-          <Item Id="Bus_ListView" ViewId="Bus_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="Ticket_ListView" ViewId="Ticket_ListView" ObjectKey="" Index="0" ImageName="Business_Report" IsNewNode="True" />
+          <Item Id="Bus_ListView" ViewId="Bus_ListView" ObjectKey="" ImageName="Travel_Bus" IsNewNode="True" />
           <Item Id="Event_ListView" Removed="True" />
           <Item Id="Location_ListView" Removed="True" />
           <Item Id="PassengerType_ListView" Removed="True" />
@@ -15,7 +15,7 @@
       <Item Id="Menu" Caption="More Options">
         <Items>
           <Item Id="Bus_ListView" Removed="True" />
-          <Item Id="Event_ListView" ViewId="Event_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="Event_ListView" ViewId="Event_ListView" ObjectKey="" Visible="False" IsNewNode="True" />
           <Item Id="Location_ListView" Caption="Stations / Places" ViewId="Location_ListView" ObjectKey="" IsNewNode="True" />
           <Item Id="PassengerType_ListView" ViewId="PassengerType_ListView" ObjectKey="" IsNewNode="True" />
           <Item Id="Ticket_ListView" Removed="True" />
@@ -24,6 +24,7 @@
       </Item>
     </Items>
   </NavigationItems>
+  <Options UIType="SingleWindowSDI" Skin="Office 2013" FormStyle="Ribbon" RestoreTabbedMdiLayout="False" Palette="Office 2019 Colorful" />
   <SchemaModules>
     <SchemaModule Name="SchedulerModuleBase" Version="20.1.4.0" IsNewNode="True" />
     <SchemaModule Name="SchedulerWindowsFormsModule" Version="20.1.4.0" IsNewNode="True" />

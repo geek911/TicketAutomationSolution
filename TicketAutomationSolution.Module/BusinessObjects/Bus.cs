@@ -30,12 +30,43 @@ namespace TicketAutomationSolution.Module.BusinessObjects
             set => SetPropertyValue(nameof(NumberPlate), ref _numberPlate, value);
         }
 
+        [NonPersistent]
+        public decimal TodaySales
+        {
+            get
+            {
+                var total = Tickets.Where(t => t.DateTime.Date == DateTime.Today.Date).Sum(t => t.Amount);
+                return total;
+            }
+        }
+        [NonPersistent ]
+        public decimal ThisMonthSales
+        {
+            get
+            {
+
+                var total = Tickets.Where(t => t.DateTime.Year == DateTime.Today.Year && t.DateTime.Month == DateTime.Today.Month).Sum(t => t.Amount);
+                return total;
+            }
+        }
+
+        [NonPersistent]
+        public decimal TotalSalesThisYear
+        {
+            get
+            {
+                var total = Tickets.Where(t => t.DateTime.Year == DateTime.Today.Year).Sum(t => t.Amount);
+                return total;
+
+            }
+        }
+
         [Association("Bus-Tickets")]
         public XPCollection<Ticket> Tickets
         {
             get
             {
-                return GetCollection<Ticket>(nameof(Ticket));
+                return GetCollection<Ticket>(nameof(Tickets));
             }
         }
 
